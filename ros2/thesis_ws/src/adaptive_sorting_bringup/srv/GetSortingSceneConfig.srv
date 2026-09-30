@@ -1,0 +1,6 @@
+---
+int32 bin_count
+int32 context_light_count
+bool show_bin_color_labels
+bool color_target_bins
+string[] supported_colors

@@ -1,0 +1,11 @@
+string research_question
+string agent
+int32 trial
+int32 total_trials
+int32 phase
+int32 total_phases
+float64 rolling_accuracy
+int8 last_reward
+---
+bool success
+string error

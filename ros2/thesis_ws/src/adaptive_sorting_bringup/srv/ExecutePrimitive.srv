@@ -1,0 +1,9 @@
+string primitive
+string sphere_color
+---
+bool success
+float64 duration_seconds
+float64 planning_duration_seconds
+float64 execution_duration_seconds
+bool cache_hit
+string error

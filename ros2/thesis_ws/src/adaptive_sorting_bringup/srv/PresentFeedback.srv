@@ -1,0 +1,4 @@
+int8 reward
+---
+bool success
+string error

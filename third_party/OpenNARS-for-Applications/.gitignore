@@ -1,0 +1,16 @@
+NAR.exe
+NAR
+NAR.profile.json
+NAR-c256-t240
+NAR-c256-t240.profile.json
+NAR.a
+NAR.so
+NAR.dll
+src/RuleTable.c
+.envrc
+NAR.dSYM/
+*~
+
+# For Clangd
+.cache/
+compile_commands.json

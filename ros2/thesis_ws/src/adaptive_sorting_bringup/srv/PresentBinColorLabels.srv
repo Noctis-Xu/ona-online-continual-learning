@@ -1,0 +1,4 @@
+string[] bin_colors
+---
+bool success
+string error

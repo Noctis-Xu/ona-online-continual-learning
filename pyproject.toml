@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=79"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adaptive-sorting"
+version = "0.1.0"
+description = "Adaptive robotic sorting experiments with ONA and baseline agents"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.10",
+    "numpy>=1.26",
+    "pandas>=2.0",
+    "PyYAML>=6.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+adaptive_sorting = ["configs/*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# A sourced ROS 2 installation registers launch-testing plugins that need extra packages.
+addopts = "-p no:launch_testing -p no:launch_ros"

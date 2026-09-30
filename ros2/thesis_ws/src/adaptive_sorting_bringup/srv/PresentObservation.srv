@@ -1,0 +1,6 @@
+string sphere_color
+bool light_1_on
+bool light_2_on
+---
+bool success
+string error

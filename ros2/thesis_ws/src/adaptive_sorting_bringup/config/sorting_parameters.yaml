@@ -1,0 +1,18 @@
+scene:
+  pickup_x: 0.34
+  pickup_y: 0.45
+  bin_x: 0.56
+  bin_y_offset: -0.10
+  bin_spacing: 0.15
+  sphere_radius: 0.035
+  pickup_sphere_center_z: 0.075
+  bin_sphere_center_z: 0.05
+
+motion:
+  pickup_hover_z: 0.30
+  bin_hover_z: 0.34
+  planning_time: 5.0
+  velocity_scaling: 1.0
+  acceleration_scaling: 1.0
+  cache_trajectories: true
+  cache_start_tolerance: 0.005

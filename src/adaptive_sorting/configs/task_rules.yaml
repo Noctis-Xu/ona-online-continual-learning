@@ -1,0 +1,133 @@
+rules:
+  initial:
+    context: null
+    available_actions: &five_actions
+      - place_to_bin1
+      - place_to_bin2
+      - place_to_bin3
+      - place_to_bin4
+      - place_to_bin5
+    mapping:
+      red: place_to_bin1
+      orange: place_to_bin2
+      yellow: place_to_bin3
+      green: place_to_bin4
+      blue: place_to_bin5
+
+  local_update_after:
+    context: null
+    available_actions: *five_actions
+    mapping:
+      red: place_to_bin5
+      orange: place_to_bin2
+      yellow: place_to_bin3
+      green: place_to_bin4
+      blue: place_to_bin1
+
+  recurring_update_c:
+    context: null
+    available_actions: *five_actions
+    mapping:
+      red: place_to_bin5
+      orange: place_to_bin4
+      yellow: place_to_bin3
+      green: place_to_bin2
+      blue: place_to_bin1
+
+  local_update_3_after:
+    context: null
+    available_actions: *five_actions
+    mapping:
+      red: place_to_bin3
+      orange: place_to_bin2
+      yellow: place_to_bin5
+      green: place_to_bin4
+      blue: place_to_bin1
+
+  local_update_4_after:
+    context: null
+    available_actions: *five_actions
+    mapping:
+      red: place_to_bin2
+      orange: place_to_bin4
+      yellow: place_to_bin3
+      green: place_to_bin5
+      blue: place_to_bin1
+
+  context_light_off:
+    context: light_off
+    available_actions: *five_actions
+    mapping:
+      red: place_to_bin1
+      orange: place_to_bin2
+      yellow: place_to_bin3
+      green: place_to_bin4
+      blue: place_to_bin5
+
+  context_light_on:
+    context: light_on
+    available_actions: *five_actions
+    mapping:
+      red: place_to_bin3
+      orange: place_to_bin5
+      yellow: place_to_bin1
+      green: place_to_bin2
+      blue: place_to_bin4
+
+  novel_input_base:
+    context: null
+    available_actions: &seven_actions
+      - place_to_bin1
+      - place_to_bin2
+      - place_to_bin3
+      - place_to_bin4
+      - place_to_bin5
+      - place_to_bin6
+      - place_to_bin7
+    mapping:
+      red: place_to_bin1
+      orange: place_to_bin2
+      yellow: place_to_bin3
+      green: place_to_bin4
+      blue: place_to_bin5
+
+  expanded_inputs:
+    context: null
+    available_actions: *seven_actions
+    mapping:
+      red: place_to_bin1
+      orange: place_to_bin2
+      yellow: place_to_bin3
+      green: place_to_bin4
+      blue: place_to_bin5
+      indigo: place_to_bin6
+      violet: place_to_bin7
+
+  color_target_base:
+    context: null
+    available_actions: &color_actions
+      - place_to_bin_red
+      - place_to_bin_orange
+      - place_to_bin_yellow
+      - place_to_bin_green
+      - place_to_bin_blue
+      - place_to_bin_indigo
+      - place_to_bin_violet
+    mapping:
+      red: place_to_bin_red
+      orange: place_to_bin_orange
+      yellow: place_to_bin_yellow
+      green: place_to_bin_green
+      blue: place_to_bin_blue
+
+  color_target_expanded:
+    context: null
+    available_actions: *color_actions
+    mapping:
+      red: place_to_bin_red
+      orange: place_to_bin_orange
+      yellow: place_to_bin_yellow
+      green: place_to_bin_green
+      blue: place_to_bin_blue
+      indigo: place_to_bin_indigo
+      violet: place_to_bin_violet

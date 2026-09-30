@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Experiment outputs
+/experiment_logs/
+
+# ROS 2 / colcon build artifacts
+/ros2/**/build/
+/ros2/**/install/
+/ros2/**/log/
+
+# ONA build staging and binaries
+/tmp/
+/third_party/OpenNARS-for-Applications/NAR-*
